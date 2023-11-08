@@ -92,39 +92,43 @@ function ListaDeItens() {
       <ul>
         {itens.map((item, indice) => (
           <li className='item' key={indice}>
-            {item.titulo} - {item.status}
-            {item.status === 'Para Ler' && (
-              <button className='marcarLido' onClick={() => alternarStatusParaLido(indice)}>Marcar como Lido</button>
-            )}
-            
-            <button className='marcarLido' onClick={() => alternarDetalhes(indice)}>Detalhes</button>
-            <button className='marcarLido' onClick={() => excluirItem(indice)}>Excluir</button>
-            
+            <div className='divNomeLivro'>
+              {item.titulo} - {item.status}
+              {item.status === 'Para Ler' && (
+                <button className='marcarLido' onClick={() => alternarStatusParaLido(indice)}>Marcar como Lido</button>
+              )}
+
+              <button className='buttonDetalhes' onClick={() => alternarDetalhes(indice)}>Detalhes</button>
+              <button className='buttonExcluir' onClick={() => excluirItem(indice)}>Excluir</button>
+            </div>
+
             {item.detalhesVisiveis && (
               <div>
                 {edicaoDetalhes.indice === indice ? (
                   <div>
-                    <input 
-                      type="text"
-                      placeholder="Resumo"
-                      value={item.resumo}
-                      onChange={(e) => {
-                        const itensAtualizados = [...itens];
-                        itensAtualizados[indice].resumo = e.target.value;
-                        setItens(itensAtualizados);
-                      }}
-                    />
+                      <input
+                      className='Input'
+                        type="text"
+                        placeholder="Resumo"
+                        value={item.resumo}
+                        onChange={(e) => {
+                          const itensAtualizados = [...itens];
+                          itensAtualizados[indice].resumo = e.target.value;
+                          setItens(itensAtualizados);
+                        }}
+                      />
 
-                    <input
-                      type="text"
-                      placeholder="Autor"
-                      value={item.autor}
-                      onChange={(e) => {
-                        const itensAtualizados = [...itens];
-                        itensAtualizados[indice].autor = e.target.value;
-                        setItens(itensAtualizados);
-                      }}
-                    />
+                      <input
+                      className='Input'
+                        type="text"
+                        placeholder="Autor"
+                        value={item.autor}
+                        onChange={(e) => {
+                          const itensAtualizados = [...itens];
+                          itensAtualizados[indice].autor = e.target.value;
+                          setItens(itensAtualizados);
+                        }}
+                      />
 
                     <div className='classi'>
                       Estrelas:
@@ -151,8 +155,10 @@ function ListaDeItens() {
                     <p className='detalhe'>Resumo: {item.resumo}</p>
                     <p className='detalhe'>Autor: {item.autor}</p>
                     <p className='detalhe'>Classificação: {item.classificacao}</p>
-                    <button className='marcarLido' onClick={() => iniciarEdicaoDetalhes(indice)}>Editar</button>
-                    <button className='marcarLido' onClick={() => fecharDetalhes(indice)}>Ver menos</button>
+                    <div className='GrupoBotoes'>
+                      <button className='buttonEditar' onClick={() => iniciarEdicaoDetalhes(indice)}>Editar</button>
+                      <button className='buttonEditar' onClick={() => fecharDetalhes(indice)}>Ver menos</button>
+                    </div>
                   </div>
                 )}
 
@@ -161,14 +167,19 @@ function ListaDeItens() {
           </li>
         ))}
       </ul>
-      <div>
-        <input
-          type="text"
-          value={textoDeEntrada}
-          onChange={(e) => setTextoDeEntrada(e.target.value)}
-        />
-        <button className='btAdicionar' onClick={adicionarItem}>Adicionar título</button>
-        <button className='btAdicionar' onClick={limparItens}>Limpar acervo</button>
+      <div className='div-parte-texto'>
+        <div className="form">
+          <input
+            className="input"
+            type="text"
+            placeholder="Nome do Livro"
+            value={textoDeEntrada}
+            onChange={(e) => setTextoDeEntrada(e.target.value)}
+          />
+          <span className="input-border"></span>
+        </div>
+        <button className='btAdicionarLivro' onClick={adicionarItem}>Adicionar título</button>
+        <button className='btAdicionarLivro' onClick={limparItens}>Limpar acervo</button>
       </div>
     </div>
   );
