@@ -35,9 +35,12 @@ function ListaDeItens() {
 
   const alternarStatusParaLido = (indice) => {
     const itensAtualizados = [...itens];
-    itensAtualizados[indice].status = '*';
-    setItens(itensAtualizados);
-    salvarDetalhesNoLocalStorage(itensAtualizados);
+    // Verifica se o status é vazio antes de marcar como lido
+    if (itensAtualizados[indice].status === '') {
+      itensAtualizados[indice].status = 'Lido';
+      setItens(itensAtualizados);
+      salvarDetalhesNoLocalStorage(itensAtualizados);
+    }
   };
 
   const alternarDetalhes = (indice) => {
@@ -89,14 +92,12 @@ function ListaDeItens() {
         <p className='titulos'>Títulos: {contadorItensNaLista}</p>
         <p className='titulos'>Lidos: {contadorItensLidos}</p>
       </div>
-      <ul>
+      <ul className='UL'>
         {itens.map((item, indice) => (
           <li className='item' key={indice}>
+            <hr></hr>
             <div className='divNomeLivro'>
               {item.titulo} - {item.status}
-              {item.status === 'Para Ler' && (
-                <button className='marcarLido' onClick={() => alternarStatusParaLido(indice)}>Marcar como Lido</button>
-              )}
 
               <button className='buttonDetalhes' onClick={() => alternarDetalhes(indice)}>Detalhes</button>
               <button className='buttonExcluir' onClick={() => excluirItem(indice)}>Excluir</button>
@@ -106,29 +107,29 @@ function ListaDeItens() {
               <div>
                 {edicaoDetalhes.indice === indice ? (
                   <div>
-                      <input
+                    <input
                       className='Input'
-                        type="text"
-                        placeholder="Resumo"
-                        value={item.resumo}
-                        onChange={(e) => {
-                          const itensAtualizados = [...itens];
-                          itensAtualizados[indice].resumo = e.target.value;
-                          setItens(itensAtualizados);
-                        }}
-                      />
+                      type="text"
+                      placeholder="Resumo"
+                      value={item.resumo}
+                      onChange={(e) => {
+                        const itensAtualizados = [...itens];
+                        itensAtualizados[indice].resumo = e.target.value;
+                        setItens(itensAtualizados);
+                      }}
+                    />
 
-                      <input
+                    <input
                       className='Input'
-                        type="text"
-                        placeholder="Autor"
-                        value={item.autor}
-                        onChange={(e) => {
-                          const itensAtualizados = [...itens];
-                          itensAtualizados[indice].autor = e.target.value;
-                          setItens(itensAtualizados);
-                        }}
-                      />
+                      type="text"
+                      placeholder="Autor"
+                      value={item.autor}
+                      onChange={(e) => {
+                        const itensAtualizados = [...itens];
+                        itensAtualizados[indice].autor = e.target.value;
+                        setItens(itensAtualizados);
+                      }}
+                    />
 
                     <div className='classi'>
                       Estrelas:
@@ -156,6 +157,9 @@ function ListaDeItens() {
                     <p className='detalhe'>Autor: {item.autor}</p>
                     <p className='detalhe'>Classificação: {item.classificacao}</p>
                     <div className='GrupoBotoes'>
+                      {item.status === '' && (
+                        <button className='ButtonmarcarLido' onClick={() => alternarStatusParaLido(indice)}>Marcar como Lido</button>
+                      )}
                       <button className='buttonEditar' onClick={() => iniciarEdicaoDetalhes(indice)}>Editar</button>
                       <button className='buttonEditar' onClick={() => fecharDetalhes(indice)}>Ver menos</button>
                     </div>
