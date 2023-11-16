@@ -54,11 +54,12 @@ function ListaDeItens() {
   };
 
   const salvarEdicaoDetalhes = (indice) => {
-    const itensAtualizados = [...itens];
-    setEdicaoDetalhes({ indice: null });
-    setItens(itensAtualizados);
-    salvarDetalhesNoLocalStorage(itensAtualizados);
-  };
+  const itensAtualizados = [...itens];
+  itensAtualizados[indice].detalhesVisiveis = false; // Oculta os detalhes após a edição
+  setEdicaoDetalhes({ indice: null });
+  setItens(itensAtualizados);
+  salvarDetalhesNoLocalStorage(itensAtualizados); // Salva as alterações no localStorage
+};
 
   const fecharDetalhes = (indice) => {
     const itensAtualizados = [...itens];
