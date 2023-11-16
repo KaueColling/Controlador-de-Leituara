@@ -229,6 +229,11 @@ hr {
   border-radius: 10px;
 }
 
+.InputInfo {
+  display: flex;
+  flex-direction: row;
+}
+
 /* Estilo para o formulário */
 .form {
   --width-of-input: 200px; /* Largura padrão dos campos de entrada */
@@ -238,12 +243,13 @@ hr {
   --input-hovered-color: #BFBFBD; /* Cor de fundo ao passar o mouse */
   position: relative; /* Define o posicionamento relativo para elementos internos */
   width: var(--width-of-input); /* Largura com base na variável de largura */
+  margin: 0.5rem;
 }
 
 /* Estilo para campos de entrada de texto */
 .input2 {
   color: #0D0D0D; /* Cor do texto nos campos de entrada */
-  font-size: 18px; /* Tamanho da fonte nos campos de entrada */
+  font-size: 14px; /* Tamanho da fonte nos campos de entrada */
   background-color: transparent; /* Fundo transparente */
   width: 100%; /* Largura total do elemento pai */
   box-sizing: border-box; /* Caixa com modelo de borda (inclui padding na largura) */

@@ -107,32 +107,34 @@ function ListaDeItens() {
               <div>
                 {edicaoDetalhes.indice === indice ? (
                   <div>
-                    <div className="form">
-                      <input
-                        className='input2'
-                        type="text"
-                        placeholder="Resumo"
-                        value={item.resumo}
-                        onChange={(e) => {
-                          const itensAtualizados = [...itens];
-                          itensAtualizados[indice].resumo = e.target.value;
-                          setItens(itensAtualizados);
-                        }}
-                      />
-                    </div>
+                    <div className='InputInfo'>
+                      <div className="form">
+                        <input
+                          className='input2'
+                          type="text"
+                          placeholder="Resumo"
+                          value={item.resumo}
+                          onChange={(e) => {
+                            const itensAtualizados = [...itens];
+                            itensAtualizados[indice].resumo = e.target.value;
+                            setItens(itensAtualizados);
+                          }}
+                        />
+                      </div>
 
-                    <div className="form">
-                      <input
-                        className='input2'
-                        type="text"
-                        placeholder="Autor"
-                        value={item.autor}
-                        onChange={(e) => {
-                          const itensAtualizados = [...itens];
-                          itensAtualizados[indice].autor = e.target.value;
-                          setItens(itensAtualizados);
-                        }}
-                      />
+                      <div className="form">
+                        <input
+                          className='input2'
+                          type="text"
+                          placeholder="Autor"
+                          value={item.autor}
+                          onChange={(e) => {
+                            const itensAtualizados = [...itens];
+                            itensAtualizados[indice].autor = e.target.value;
+                            setItens(itensAtualizados);
+                          }}
+                        />
+                      </div>
                     </div>
                     <div className='classi'>
                       Estrelas:
