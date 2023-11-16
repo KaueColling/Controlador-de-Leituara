@@ -220,27 +220,6 @@ input:focus ~ .input-border {
   transform: translateY(-5px); /* Translação para cima ao passar o mouse */
 }
 
-.Input {
-  font-weight: 500;
-  height: 30px;
-  margin: 1rem;
-  font-size: .8vw;
-  color: #fff;
-  background-color: rgb(28,28,30);
-  box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
-  border-radius: 0.4vw;
-  border: none;
-  outline: none;
-  padding: 0.4vw;
-  max-width: 190px;
-  transition: .4s;
-}
-
-
-.Input:focus {
-  box-shadow: 0 0 0 .15vw skyblue;
-}
-
 .item {
   margin-top: 2rem;
 }
@@ -248,4 +227,54 @@ input:focus ~ .input-border {
 hr {
   border-color: #8C031C;
   border-radius: 10px;
+}
+
+/* Estilo para o formulário */
+.form {
+  --width-of-input: 200px; /* Largura padrão dos campos de entrada */
+  --border-height: 1px; /* Altura da borda inferior dos campos de entrada */
+  --border-before-color: #0D0D0D; /* Cor da borda antes do foco */
+  --border-after-color: #0D0D0D; /* Cor da borda após o foco */
+  --input-hovered-color: #BFBFBD; /* Cor de fundo ao passar o mouse */
+  position: relative; /* Define o posicionamento relativo para elementos internos */
+  width: var(--width-of-input); /* Largura com base na variável de largura */
+}
+
+/* Estilo para campos de entrada de texto */
+.input2 {
+  color: #0D0D0D; /* Cor do texto nos campos de entrada */
+  font-size: 18px; /* Tamanho da fonte nos campos de entrada */
+  background-color: transparent; /* Fundo transparente */
+  width: 100%; /* Largura total do elemento pai */
+  box-sizing: border-box; /* Caixa com modelo de borda (inclui padding na largura) */
+  padding-inline: 0.5em; /* Espaçamento interno nas laterais */
+  padding-block: 0.7em; /* Espaçamento interno superior e inferior */
+  border: none; /* Remove a borda padrão */
+  border-bottom: var(--border-height) solid var(--border-before-color); /* Borda inferior personalizada */
+}
+
+/* Estilo para a animação da borda inferior */
+.input2-border {
+  position: absolute; /* Posicionamento absoluto para a borda animada */
+  background: var(--border-after-color); /* Cor de fundo da borda animada */
+  width: 0%; /* Largura inicial da borda animada (0%) */
+  height: 2px; /* Altura da borda animada */
+  bottom: 0; /* Alinhamento inferior */
+  left: 0; /* Alinhamento à esquerda */
+  transition: 0.3s; /* Duração da animação da borda */
+}
+
+/* Estilo ao passar o mouse sobre o campo de entrada */
+input2:hover {
+  background: var(--input-hovered-color); /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilo quando o campo de entrada está em foco */
+input2:focus {
+  outline: none; /* Remove a borda de foco padrão */
+}
+
+/* Estilo da borda animada quando o campo de entrada está em foco */
+input2:focus ~ .input2-border {
+  width: 100%; /* Aumenta a largura da borda animada quando em foco */
 }
