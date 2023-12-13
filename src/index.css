@@ -9,7 +9,7 @@ body {
 .DivPrincipal {
   background-color: #F2EEEB;
   padding: 10px;
-  min-height: 87vh;
+  min-height: 85vh;
 }
 
 .input {
@@ -18,7 +18,8 @@ body {
   width: 200px;
   background-color:  #0D0D0D;
   justify-content: center;
-  border-radius: 5px
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 .value {
