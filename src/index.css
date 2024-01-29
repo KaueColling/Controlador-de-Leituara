@@ -3,13 +3,13 @@ body {
   background-image: url(https://i.pinimg.com/564x/ae/20/0e/ae200e8f0a55c0d790f5925a7267007b.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 100vh;
+  max-height: 1175vh;
 }
 
 .DivPrincipal {
   background-color: #F2EEEB;
   padding: 10px;
-  min-height: 57vh;
+  min-height: 50vh;
 }
 
 .input {
