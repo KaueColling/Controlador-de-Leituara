@@ -181,7 +181,7 @@ function Livro() {
       <div className='div-parte-texto'>
         <div className="form">
           <input
-            className="input"
+            className="inputNomeLivro"
             type="text"
             placeholder="Nome do Livro"
             value={textoDeEntrada}

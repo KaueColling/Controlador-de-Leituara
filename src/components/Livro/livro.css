@@ -4,11 +4,6 @@
     min-height: 85vh;
   }
 
-
-
-
-
-
 /* Estilo para a divisão de parte do texto */
 .div-parte-texto {
   display: flex; /* Define a divisão como um flex container */
@@ -121,7 +116,7 @@
 .buttonEditar {
   display: flex; /* Define o botão como um flex container */
   height: 30px; /* Altura do botão */
-  width: 100px; /* Largura do botão */
+  width: 125px; /* Largura do botão */
   margin: 0rem 1rem; /* Margem ao redor do botão */
   align-items: center; /* Centraliza o conteúdo verticalmente */
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
@@ -192,16 +187,46 @@ hr {
 }
 
 /* Estilo ao passar o mouse sobre o campo de entrada */
-input2:hover {
+.input2:hover {
   background: var(--input-hovered-color); /* Altera a cor de fundo ao passar o mouse */
 }
 
 /* Estilo quando o campo de entrada está em foco */
-input2:focus {
+.input2:focus {
   outline: none; /* Remove a borda de foco padrão */
 }
 
 /* Estilo da borda animada quando o campo de entrada está em foco */
-input2:focus ~ .input2-border {
+.input2:focus ~ .input2-border {
   width: 100%; /* Aumenta a largura da borda animada quando em foco */
+}
+
+.inputNomeLivro {
+  background-color: #fffafa;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.btAdicionarLivro {
+  display: flex; /* Define o botão como um flex container */
+  height: 30px; /* Altura do botão */
+  width: 150px; /* Largura do botão */
+  margin: 0rem 1rem; /* Margem ao redor do botão */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  background-color: #0D0D0D; /* Cor de fundo do botão */
+  border-radius: 10px; /* Borda arredondada */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+  transition: all 0.2s linear; /* Transição suave de propriedades */
+  cursor: pointer; /* Cursor do mouse em forma de mão */
+  border: none; /* Remove a borda padrão */
+  background: #0D0D0D; /* Cor de fundo do botão */
+  color: #fffafa; /* Cor do texto no botão */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo de hover para o botão "Detalhes do Livro" */
+.btAdicionarLivro:hover {
+  transform: translateY(-5px); /* Translação para cima ao passar o mouse */
 }
