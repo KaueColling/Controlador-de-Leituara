@@ -4,8 +4,9 @@ import './perfil.css'
 function Perfil() {
 
   return (
-    <div className='DivPrincipal'>
-      <h1>Perfil</h1>
+    <div className='DivPrincipalPerfil'>
+      <img src="/FotoPerfil.jpg" className='FotoPerfil'/>
+      <h1 className='NomeUser'>Kaue Correa Colling</h1>
     </div>
   );
 }

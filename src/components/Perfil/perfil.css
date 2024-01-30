@@ -1,5 +1,24 @@
-.DivPrincipal {
-    background-color: #F2EEEB;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+.DivPrincipalPerfil {
     padding: 10px;
-    min-height: 85vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-height: 40vh;
+    width: 995px;
   }
+
+.FotoPerfil {
+  height: 200px;
+  width: 200px;
+  border-radius: 300px;
+  border: 2px solid #0D0D0D;
+}
+
+.NomeUser {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 40px;
+}
