@@ -1,121 +1,151 @@
+/* Classe para a divisão principal do livro */
 .DivPrincipalLivro {
-    background-color: #F2EEEB;
-    padding: 5px;
-    min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 995px;
-  }
+  background-color: #F2EEEB;  /* Cor de fundo */
+  padding: 5px;  /* Preenchimento */
+  min-height: 30vh;  /* Altura mínima em relação à viewport */
+  display: flex;  /* Define como contêiner flexível */
+  flex-direction: column;  /* Direção da coluna para os itens flexíveis */
+  align-items: center;  /* Centraliza verticalmente */
+  justify-content: center;  /* Centraliza horizontalmente */
+  width: 995px;  /* Largura fixa */
+}
 
-/* Estilo para a divisão de parte do texto */
+/* Classe para uma divisão que contém parte do texto */
 .div-parte-texto {
-  display: flex; /* Define a divisão como um flex container */
-  flex-direction: row; /* Direção das crianças flexíveis (linhas) */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  display: flex;  /* Define como contêiner flexível */
+  flex-direction: row;  /* Direção de linha para os itens flexíveis */
+  align-items: center;  /* Centraliza verticalmente */
+  justify-content: center;  /* Centraliza horizontalmente */
 }
 
+/* Estilo para título de nível 1 */
 .titulo1 {
-  font-size: 35px;
+  font-size: 35px;  /* Tamanho da fonte */
 }
 
+/* Estilo para uma subdivisão de título */
 .subtitulo {
-  display: flex;
-  flex-direction: row;
+  display: flex;  /* Define como contêiner flexível */
+  flex-direction: row;  /* Direção de linha para os itens flexíveis */
 }
 
+/* Estilo para títulos em geral */
 .titulos {
-  margin: 10px;
-  font-size: 25px;
+  margin: 10px;  /* Margem ao redor do elemento */
+  font-size: 25px;  /* Tamanho da fonte */
 }
 
+/* Estilo para uma divisão que contém o nome do livro */
 .divNomeLivro {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 1rem;
+  display: flex;  /* Define como contêiner flexível */
+  flex-direction: row;  /* Direção de linha para os itens flexíveis */
+  align-items: center;  /* Centraliza verticalmente */
+  margin-bottom: 1rem;  /* Margem inferior */
 }
 
+/* Estilo para itens de texto */
 .item {
-  font-size: 22.5px
+  font-size: 22.5px;  /* Tamanho da fonte */
 }
 
-/* Estilo para o botão "Detalhes do Livro" */
+/* Estilo para botão "Detalhes do Livro" */
 .buttonDetalhes {
-  display: flex; /* Define o botão como um flex container */
-  height: 30px; /* Altura do botão */
-  width: 100px; /* Largura do botão */
-  margin: 0rem 2rem; /* Margem ao redor do botão */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  background-color: #0D0D0D; /* Cor de fundo do botão */
-  border-radius: 10px; /* Borda arredondada */
-  letter-spacing: 1px; /* Espaçamento entre letras */
-  transition: all 0.2s linear; /* Transição suave de propriedades */
-  cursor: pointer; /* Cursor do mouse em forma de mão */
-  border: none; /* Remove a borda padrão */
-  background: #0D0D0D; /* Cor de fundo do botão */
-  color: #fffafa; /* Cor do texto no botão */
-  font-size: 16px; /* Tamanho da fonte */
+  display: flex;  /* Define como contêiner flexível */
+  height: 30px;  /* Altura do botão */
+  width: 100px;  /* Largura do botão */
+  margin: 0rem 2rem;  /* Margem ao redor do botão */
+  align-items: center;  /* Centraliza verticalmente */
+  justify-content: center;  /* Centraliza horizontalmente */
+  background-color: #0D0D0D;  /* Cor de fundo do botão */
+  border-radius: 10px;  /* Borda arredondada */
+  letter-spacing: 1px;  /* Espaçamento entre letras */
+  transition: all 0.2s linear;  /* Transição suave de propriedades */
+  cursor: pointer;  /* Cursor do mouse em forma de mão */
+  border: none;  /* Remove a borda padrão */
+  background: #0D0D0D;  /* Cor de fundo do botão */
+  color: #fffafa;  /* Cor do texto no botão */
+  font-size: 16px;  /* Tamanho da fonte */
 }
 
 /* Estilo de hover para o botão "Detalhes do Livro" */
 .buttonDetalhes:hover {
-  transform: translateY(-5px); /* Translação para cima ao passar o mouse */
+  transform: translateY(-5px);  /* Translação para cima ao passar o mouse */
 }
 
-/* Estilo para o botão "Detalhes do Livro" */
+/* Estilo para botão "Marcar como Lido" */
 .ButtonmarcarLido {
-  display: flex; /* Define o botão como um flex container */
-  height: 30px; /* Altura do botão */
-  width: 180px; /* Largura do botão */
-  margin-left: 2rem; /* Margem ao redor do botão */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  background-color: #0D0D0D; /* Cor de fundo do botão */
-  border-radius: 10px; /* Borda arredondada */
-  letter-spacing: 1px; /* Espaçamento entre letras */
-  transition: all 0.2s linear; /* Transição suave de propriedades */
-  cursor: pointer; /* Cursor do mouse em forma de mão */
-  border: none; /* Remove a borda padrão */
-  background: #0D0D0D; /* Cor de fundo do botão */
-  color: #fffafa; /* Cor do texto no botão */
-  font-size: 16px; /* Tamanho da fonte */
+  display: flex;  /* Define como contêiner flexível */
+  height: 30px;  /* Altura do botão */
+  width: 200px;  /* Largura do botão */
+  margin: 0rem 1rem;  /* Margem ao redor do botão */
+  align-items: center;  /* Centraliza verticalmente */
+  justify-content: center;  /* Centraliza horizontalmente */
+  background-color: #0D0D0D;  /* Cor de fundo do botão */
+  border-radius: 10px;  /* Borda arredondada */
+  letter-spacing: 1px;  /* Espaçamento entre letras */
+  transition: all 0.2s linear;  /* Transição suave de propriedades */
+  cursor: pointer;  /* Cursor do mouse em forma de mão */
+  border: none;  /* Remove a borda padrão */
+  background: #0D0D0D;  /* Cor de fundo do botão */
+  color: #fffafa;  /* Cor do texto no botão */
+  font-size: 16px;  /* Tamanho da fonte */
 }
 
 /* Estilo de hover para o botão "Detalhes do Livro" */
 .ButtonmarcarLido:hover {
-  transform: translateY(-5px); /* Translação para cima ao passar o mouse */
+  transform: translateY(-5px);  /* Translação para cima ao passar o mouse */
 }
 
-/* Estilo para o botão "Excluir Livro" */
+/* Estilo para botão "Excluir Livro" */
 .buttonExcluir {
-  display: flex; /* Define o botão como um flex container */
-  height: 30px; /* Altura do botão */
-  width: 100px; /* Largura do botão */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  background-color: #8C031C; /* Cor de fundo do botão */
-  border-radius: 10px; /* Borda arredondada */
-  letter-spacing: 1px; /* Espaçamento entre letras */
-  transition: all 0.2s linear; /* Transição suave de propriedades */
-  cursor: pointer; /* Cursor do mouse em forma de mão */
-  border: none; /* Remove a borda padrão */
-  background: #8C031C; /* Cor de fundo do botão */
-  color: #fffafa; /* Cor do texto no botão */
-  font-size: 16px; /* Tamanho da fonte */
+  display: flex;  /* Define como contêiner flexível */
+  height: 30px;  /* Altura do botão */
+  width: 100px;  /* Largura do botão */
+  align-items: center;  /* Centraliza verticalmente */
+  justify-content: center;  /* Centraliza horizontalmente */
+  background-color: #8C031C;  /* Cor de fundo do botão */
+  border-radius: 10px;  /* Borda arredondada */
+  letter-spacing: 1px;  /* Espaçamento entre letras */
+  transition: all 0.2s linear;  /* Transição suave de propriedades */
+  cursor: pointer;  /* Cursor do mouse em forma de mão */
+  border: none;  /* Remove a borda padrão */
+  color: #fffafa;  /* Cor do texto no botão */
+  font-size: 16px;  /* Tamanho da fonte */
 }
 
-/* Estilo de hover para o botão "Excluir Livro" */
+/* Estilo de hover para o botão "Editar" */
 .buttonExcluir:hover {
-  transform: translateY(-5px); /* Translação para cima ao passar o mouse */
+  transform: translateY(-5px);  /* Translação para cima ao passar o mouse */
 }
 
+/* Estilo para botão "Editar" */
+.buttonEditar {
+  display: flex;  /* Define como contêiner flexível */
+  height: 30px;  /* Altura do botão */
+  width: 100px;  /* Largura do botão */
+  margin: 0rem 2rem;  /* Margem ao redor do botão */
+  align-items: center;  /* Centraliza verticalmente */
+  justify-content: center;  /* Centraliza horizontalmente */
+  background-color: #0D0D0D;  /* Cor de fundo do botão */
+  border-radius: 10px;  /* Borda arredondada */
+  letter-spacing: 1px;  /* Espaçamento entre letras */
+  transition: all 0.2s linear;  /* Transição suave de propriedades */
+  cursor: pointer;  /* Cursor do mouse em forma de mão */
+  border: none;  /* Remove a borda padrão */
+  background: #0D0D0D;  /* Cor de fundo do botão */
+  color: #fffafa;  /* Cor do texto no botão */
+  font-size: 16px;  /* Tamanho da fonte */
+}
+
+/* Estilo de hover para o botão "Editar" */
+.buttonEditar:hover {
+  transform: translateY(-5px);  /* Translação para cima ao passar o mouse */
+}
+
+/* Estilo para um grupo de botões */
 .GrupoBotoes {
-  display: flex;
-  flex-direction: row;
+  display: flex;  /* Define como contêiner flexível */
+  flex-direction: row;  /* Direção de linha para os itens flexíveis */
 }
 
 /* Estilo para o botão "Detalhes do Livro" */
@@ -142,18 +172,21 @@
   transform: translateY(-5px); /* Translação para cima ao passar o mouse */
 }
 
+/* Estilo para o item */
 .item {
-  margin-top: 2rem;
+  margin-top: 2rem; /* Adiciona uma margem superior de 2 rem para o elemento com a classe 'item' */
 }
 
+/* Estilo para a linha horizontal (hr) */
 hr {
-  border-color: #8C031C;
-  border-radius: 10px;
+  border-color: #8C031C; /* Define a cor da borda da linha horizontal como #8C031C */
+  border-radius: 10px; /* Adiciona um raio de borda de 10 pixels para tornar a borda arredondada */
 }
 
+/* Estilo para a informação de entrada */
 .InputInfo {
-  display: flex;
-  flex-direction: row;
+  display: flex; /* Define o elemento com a classe 'InputInfo' como um contêiner flexível */
+  flex-direction: row; /* Define a direção dos itens filhos como linha */
 }
 
 /* Estilo para o formulário */
@@ -207,11 +240,12 @@ hr {
   width: 100%; /* Aumenta a largura da borda animada quando em foco */
 }
 
+/* Estilo para o campo de entrada de nome do livro */
 .inputNomeLivro {
-  background-color: #fffafa;
-  border: 2px solid black;
-  border-radius: 5px;
-  font-size: 20px;
+  background-color: #fffafa; /* Cor de fundo do campo */
+  border: 2px solid black; /* Borda sólida de 2 pixels de espessura e cor preta */
+  border-radius: 5px; /* Borda arredondada com raio de 5 pixels */
+  font-size: 20px; /* Tamanho da fonte do texto no campo */
 }
 
 .btAdicionarLivro {
@@ -237,11 +271,12 @@ hr {
   transform: translateY(-5px); /* Translação para cima ao passar o mouse */
 }
 
-.selcionar{
-  background-color: #F2EEEB;
-  margin: 2px;
-  font-size: 15px;
-  border: none;
+/* Estilo para o seletor */
+.selcionar {
+  background-color: #F2EEEB; /* Cor de fundo */
+  margin: 2px; /* Margem de 2 pixels */
+  font-size: 15px; /* Tamanho da fonte */
+  border: none; /* Sem borda */
 }
 
 .SalvarAlteracao {
