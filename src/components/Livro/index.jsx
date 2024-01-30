@@ -179,7 +179,7 @@ function Livro() {
         ))}
       </ul>
       <div className='div-parte-texto'>
-        <div className="form">
+        <div className="forma">
           <input
             className="inputNomeLivro"
             type="text"

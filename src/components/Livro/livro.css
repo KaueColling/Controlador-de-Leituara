@@ -1,7 +1,12 @@
 .DivPrincipalLivro {
     background-color: #F2EEEB;
     padding: 5px;
-    min-height: 80vh;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 995px;
   }
 
 /* Estilo para a divisão de parte do texto */
@@ -23,17 +28,18 @@
 
 .titulos {
   margin: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .divNomeLivro {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .item {
-  font-size: 20px
+  font-size: 25px
 }
 
 /* Estilo para o botão "Detalhes do Livro" */
@@ -165,7 +171,7 @@ hr {
 /* Estilo para campos de entrada de texto */
 .input2 {
   color: #0D0D0D; /* Cor do texto nos campos de entrada */
-  font-size: 14px; /* Tamanho da fonte nos campos de entrada */
+  font-size: 15px; /* Tamanho da fonte nos campos de entrada */
   background-color: transparent; /* Fundo transparente */
   width: 100%; /* Largura total do elemento pai */
   box-sizing: border-box; /* Caixa com modelo de borda (inclui padding na largura) */
@@ -205,7 +211,7 @@ hr {
   background-color: #fffafa;
   border: 2px solid black;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .btAdicionarLivro {
