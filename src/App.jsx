@@ -15,7 +15,7 @@ function ListaDeItens() {
   };
 
   return (
-    <Router>
+    <Router className='DivPrincipal'>
       <div className='DivPrincipal'>
         <div className="input">
           <Link to="/perfil" className="input">

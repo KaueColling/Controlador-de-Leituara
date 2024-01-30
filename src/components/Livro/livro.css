@@ -1,7 +1,7 @@
-.DivPrincipal {
+.DivPrincipalLivro {
     background-color: #F2EEEB;
-    padding: 10px;
-    min-height: 85vh;
+    padding: 5px;
+    min-height: 80vh;
   }
 
 /* Estilo para a divisão de parte do texto */

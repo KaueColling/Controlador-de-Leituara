@@ -88,7 +88,7 @@ function Livro() {
   const contadorItensLidos = itens.filter((item) => item.status === 'Lido').length;
 
   return (
-    <div className='DivPrincipal'>
+    <div className='DivPrincipalLivro'>
       <h2 className='titulo1'>~ Livros ~</h2>
       <div className='subtitulo'>
         <p className='titulos'>Títulos: {contadorItensNaLista}</p>
