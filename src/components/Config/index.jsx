@@ -4,7 +4,7 @@ import './config.css'
 function Config() {
 
   return (
-    <div className='DivPrincipal'>
+    <div className='DivPrincipalConfig'>
       <h1>Configurações</h1>
     </div>
   );

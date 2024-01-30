@@ -1,6 +1,5 @@
 /* Classe para a divisão principal do livro */
 .DivPrincipalLivro {
-  background-color: #F2EEEB;  /* Cor de fundo */
   padding: 5px;  /* Preenchimento */
   min-height: 30vh;  /* Altura mínima em relação à viewport */
   display: flex;  /* Define como contêiner flexível */
