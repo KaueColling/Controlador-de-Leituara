@@ -149,14 +149,14 @@ function Livro() {
                         }}
                       >
                         <option className='selecione' value="0">Selecione</option>
-                        <option value="1">⭐</option>
-                        <option value="2">⭐⭐</option>
-                        <option value="3">⭐⭐⭐</option>
-                        <option value="4">⭐⭐⭐⭐</option>
-                        <option value="5">⭐⭐⭐⭐⭐</option>
+                        <option className='selecione' value="1">⭐</option>
+                        <option className='selecione' value="2">⭐⭐</option>
+                        <option className='selecione' value="3">⭐⭐⭐</option>
+                        <option className='selecione' value="4">⭐⭐⭐⭐</option>
+                        <option className='selecione' value="5">⭐⭐⭐⭐⭐</option>
                       </select>
                     </div>
-                    <button className='marcarLido' onClick={() => salvarEdicaoDetalhes(indice)}>Salvar</button>
+                    <button className='SalvarAlteracao' onClick={() => salvarEdicaoDetalhes(indice)}>Salvar</button>
                   </div>
                 ) : (
                   <div className='txDetalhes'>

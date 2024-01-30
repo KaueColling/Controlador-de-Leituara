@@ -39,7 +39,7 @@
 }
 
 .item {
-  font-size: 25px
+  font-size: 22.5px
 }
 
 /* Estilo para o botão "Detalhes do Livro" */
@@ -234,5 +234,34 @@ hr {
 
 /* Estilo de hover para o botão "Detalhes do Livro" */
 .btAdicionarLivro:hover {
+  transform: translateY(-5px); /* Translação para cima ao passar o mouse */
+}
+
+.selcionar{
+  background-color: #F2EEEB;
+  margin: 2px;
+  font-size: 15px;
+  border: none;
+}
+
+.SalvarAlteracao {
+  display: flex; /* Define o botão como um flex container */
+  height: 30px; /* Altura do botão */
+  width: 150px; /* Largura do botão */
+  margin: 0.5rem;
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  background-color: #0D0D0D; /* Cor de fundo do botão */
+  border-radius: 10px; /* Borda arredondada */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+  transition: all 0.2s linear; /* Transição suave de propriedades */
+  cursor: pointer; /* Cursor do mouse em forma de mão */
+  border: none; /* Remove a borda padrão */
+  background: #0D0D0D; /* Cor de fundo do botão */
+  color: #fffafa; /* Cor do texto no botão */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+.SalvarAlteracao:hover {
   transform: translateY(-5px); /* Translação para cima ao passar o mouse */
 }
