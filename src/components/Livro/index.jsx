@@ -3,11 +3,16 @@ import './livro.css'
 
 function Livro() {
 
+  // Estado para armazenar a lista de itens
   const [itens, setItens] = useState([]);
+
+  // Estado para controlar o texto de entrada
   const [textoDeEntrada, setTextoDeEntrada] = useState('');
+
+  // Estado para controlar a edição dos detalhes de um item
   const [edicaoDetalhes, setEdicaoDetalhes] = useState({ indice: null });
 
-  // Carregar dados salvos do localStorage ao iniciar
+  // Efeito colateral para carregar dados salvos do localStorage ao iniciar
   useEffect(() => {
     const savedItens = JSON.parse(localStorage.getItem('itens'));
     if (savedItens) {
@@ -15,10 +20,12 @@ function Livro() {
     }
   }, []);
 
+  // Função para salvar os detalhes no localStorage
   const salvarDetalhesNoLocalStorage = (itensAtualizados) => {
     localStorage.setItem('itens', JSON.stringify(itensAtualizados));
   };
 
+  // Função para adicionar um novo item à lista
   const adicionarItem = () => {
     if (textoDeEntrada.trim() !== '') {
       const novoItem = {
@@ -34,9 +41,9 @@ function Livro() {
     }
   };
 
+  // Função para alternar o status de um item para "Lido"
   const alternarStatusParaLido = (indice) => {
     const itensAtualizados = [...itens];
-    // Verifica se o status é vazio antes de marcar como lido
     if (itensAtualizados[indice].status === '') {
       itensAtualizados[indice].status = 'Lido';
       setItens(itensAtualizados);
@@ -44,24 +51,28 @@ function Livro() {
     }
   };
 
+  // Função para alternar a visibilidade dos detalhes de um item
   const alternarDetalhes = (indice) => {
     const itensAtualizados = [...itens];
     itensAtualizados[indice].detalhesVisiveis = !itensAtualizados[indice].detalhesVisiveis;
     setItens(itensAtualizados);
   };
 
+  // Função para iniciar a edição dos detalhes de um item
   const iniciarEdicaoDetalhes = (indice) => {
     setEdicaoDetalhes({ indice });
   };
 
+  // Função para salvar as edições dos detalhes de um item
   const salvarEdicaoDetalhes = (indice) => {
     const itensAtualizados = [...itens];
-    itensAtualizados[indice].detalhesVisiveis = false; // Oculta os detalhes após a edição
+    itensAtualizados[indice].detalhesVisiveis = false;
     setEdicaoDetalhes({ indice: null });
     setItens(itensAtualizados);
-    salvarDetalhesNoLocalStorage(itensAtualizados); // Salva as alterações no localStorage
+    salvarDetalhesNoLocalStorage(itensAtualizados);
   };
 
+  // Função para fechar os detalhes de um item
   const fecharDetalhes = (indice) => {
     const itensAtualizados = [...itens];
     itensAtualizados[indice].detalhesVisiveis = false;
@@ -69,6 +80,7 @@ function Livro() {
     setEdicaoDetalhes({ indice: null });
   };
 
+  // Função para excluir um item da lista
   const excluirItem = (indice) => {
     const itensAtualizados = [...itens];
     itensAtualizados.splice(indice, 1);
@@ -76,15 +88,16 @@ function Livro() {
     salvarDetalhesNoLocalStorage(itensAtualizados);
   };
 
+  // Função para limpar a lista de itens
   const limparItens = () => {
-    setItens([]); // Limpa a lista de itens
-    localStorage.removeItem('itens'); // Remove os itens do localStorage
+    setItens([]);
+    localStorage.removeItem('itens');
   };
 
   // Contador para itens na lista
   const contadorItensNaLista = itens.length;
 
-  // Contador para itens marcados como Lidos
+  // Contador para itens marcados como "Lidos"
   const contadorItensLidos = itens.filter((item) => item.status === 'Lido').length;
 
   return (
