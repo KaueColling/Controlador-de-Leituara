@@ -203,7 +203,7 @@ function Livro() {
           <span className="input-border"></span>
         </div>
         <button className='btAdicionarLivro' onClick={adicionarItem}>Adicionar título</button>
-        <button className='btAdicionarLivro' onClick={limparItens}>Limpar acervo</button>
+        <button className='btLimparacervo' onClick={limparItens}>Limpar acervo</button>
       </div>
     </div>
   );
