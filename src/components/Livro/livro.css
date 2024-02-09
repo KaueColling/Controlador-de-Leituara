@@ -55,13 +55,12 @@
   margin: 0rem 2rem;  /* Margem ao redor do botão */
   align-items: center;  /* Centraliza verticalmente */
   justify-content: center;  /* Centraliza horizontalmente */
-  background-color: #0D0D0D;  /* Cor de fundo do botão */
+  background-color: #8C7064;  /* Cor de fundo do botão */
   border-radius: 10px;  /* Borda arredondada */
   letter-spacing: 1px;  /* Espaçamento entre letras */
   transition: all 0.2s linear;  /* Transição suave de propriedades */
   cursor: pointer;  /* Cursor do mouse em forma de mão */
   border: none;  /* Remove a borda padrão */
-  background: #0D0D0D;  /* Cor de fundo do botão */
   color: #fffafa;  /* Cor do texto no botão */
   font-size: 16px;  /* Tamanho da fonte */
 }
@@ -79,13 +78,12 @@
   margin: 0rem 1rem;  /* Margem ao redor do botão */
   align-items: center;  /* Centraliza verticalmente */
   justify-content: center;  /* Centraliza horizontalmente */
-  background-color: #0D0D0D;  /* Cor de fundo do botão */
+  background-color: #8C7064;  /* Cor de fundo do botão */
   border-radius: 10px;  /* Borda arredondada */
   letter-spacing: 1px;  /* Espaçamento entre letras */
   transition: all 0.2s linear;  /* Transição suave de propriedades */
   cursor: pointer;  /* Cursor do mouse em forma de mão */
   border: none;  /* Remove a borda padrão */
-  background: #0D0D0D;  /* Cor de fundo do botão */
   color: #fffafa;  /* Cor do texto no botão */
   font-size: 16px;  /* Tamanho da fonte */
 }
@@ -102,7 +100,7 @@
   width: 100px;  /* Largura do botão */
   align-items: center;  /* Centraliza verticalmente */
   justify-content: center;  /* Centraliza horizontalmente */
-  background-color: #8C031C;  /* Cor de fundo do botão */
+  background-color: #A62424;  /* Cor de fundo do botão */
   border-radius: 10px;  /* Borda arredondada */
   letter-spacing: 1px;  /* Espaçamento entre letras */
   transition: all 0.2s linear;  /* Transição suave de propriedades */
@@ -125,13 +123,12 @@
   margin: 0rem 2rem;  /* Margem ao redor do botão */
   align-items: center;  /* Centraliza verticalmente */
   justify-content: center;  /* Centraliza horizontalmente */
-  background-color: #0D0D0D;  /* Cor de fundo do botão */
+  background-color: #8C7064;  /* Cor de fundo do botão */
   border-radius: 10px;  /* Borda arredondada */
   letter-spacing: 1px;  /* Espaçamento entre letras */
   transition: all 0.2s linear;  /* Transição suave de propriedades */
   cursor: pointer;  /* Cursor do mouse em forma de mão */
   border: none;  /* Remove a borda padrão */
-  background: #0D0D0D;  /* Cor de fundo do botão */
   color: #fffafa;  /* Cor do texto no botão */
   font-size: 16px;  /* Tamanho da fonte */
 }
@@ -155,7 +152,7 @@
   margin: 0rem 1rem; /* Margem ao redor do botão */
   align-items: center; /* Centraliza o conteúdo verticalmente */
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  background-color: #0D0D0D; /* Cor de fundo do botão */
+  background-color: #8C7064; /* Cor de fundo do botão */
   border-radius: 10px; /* Borda arredondada */
   letter-spacing: 1px; /* Espaçamento entre letras */
   transition: all 0.2s linear; /* Transição suave de propriedades */
@@ -253,7 +250,7 @@ hr {
   margin: 0rem 1rem; /* Margem ao redor do botão */
   align-items: center; /* Centraliza o conteúdo verticalmente */
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  background-color: #0D0D0D; /* Cor de fundo do botão */
+  background-color: #8C7064; /* Cor de fundo do botão */
   border-radius: 10px; /* Borda arredondada */
   letter-spacing: 1px; /* Espaçamento entre letras */
   transition: all 0.2s linear; /* Transição suave de propriedades */
@@ -275,7 +272,7 @@ hr {
   margin: 0rem 1rem; /* Margem ao redor do botão */
   align-items: center; /* Centraliza o conteúdo verticalmente */
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  background-color: #8C031C; /* Cor de fundo do botão */
+  background-color: #A62424; /* Cor de fundo do botão */
   border-radius: 10px; /* Borda arredondada */
   letter-spacing: 1px; /* Espaçamento entre letras */
   transition: all 0.2s linear; /* Transição suave de propriedades */
@@ -305,13 +302,12 @@ hr {
   margin: 0.5rem;
   align-items: center; /* Centraliza o conteúdo verticalmente */
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  background-color: #0D0D0D; /* Cor de fundo do botão */
+  background-color: #8C7064; /* Cor de fundo do botão */
   border-radius: 10px; /* Borda arredondada */
   letter-spacing: 1px; /* Espaçamento entre letras */
   transition: all 0.2s linear; /* Transição suave de propriedades */
   cursor: pointer; /* Cursor do mouse em forma de mão */
   border: none; /* Remove a borda padrão */
-  background: #0D0D0D; /* Cor de fundo do botão */
   color: #fffafa; /* Cor do texto no botão */
   font-size: 16px; /* Tamanho da fonte */
 }
