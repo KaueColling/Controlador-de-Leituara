@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Controlador de Leitura</title>
   <link rel="manifest" href="/manifest.json">
-  <link rel="icon" href="/image//icon.ico">
+  <link rel="icon" href="/image/icon.ico">
 </head>
 
 <body>
@@ -15,6 +15,17 @@
   <div id="root"></div>
 
   <script type="module" src="/src/main.jsx"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+            navigator.serviceWorker
+                .register("./serviceWorker.js")
+                .then(res => console.log("service worker registered"))
+                .catch(err => console.log("service worker not registered", err))
+        })
+    }
+</script>
+  
 
 </body>
 
