@@ -20,7 +20,12 @@ self.addEventListener('install', function (event) {
                 '/src/components/App.css',
                 '/src/components/App.jsx',
                 '/src/components/index.css',
-                '/src/components/main.jsx'
+                '/src/components/main.jsx',
+                '/serviceWorker.js',
+                '/package.md',
+                '/package-lock.json',
+                '/vit.config.js',
+                '/.eslintrc.cjs'
             ]);
         })
     )
